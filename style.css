@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(img/cover.jpg);
+  background-repeat: no-repeat;
+}
+
+.formulario {
+  width: 40%;
+  margin: 100px auto;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo__formulario {
+  font-family: Segoe UI;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  font-family: Segoe UI;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 100%;
+  line-height: 2;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+}
+
+input[type="email"] {
+  font-family: Segoe UI;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 100%;
+  line-height: 2;
+  padding: 5px;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  font-family: Segoe UI;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  margin-top: 15px;
+  width: 20%;
+  align-self: center;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: 2px solid white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.23, 1, 0.32, 1) background, outline;
+  background: rgba(255, 255, 255, 0.9);
+  outline: 2px solid #fff;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+  outline: 2px solid #fff;
+}
